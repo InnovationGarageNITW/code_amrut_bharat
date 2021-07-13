@@ -6,10 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class FollowUpHintWidget extends StatefulWidget {
-  const FollowUpHintWidget({Key? key, required this.indexSugg})
+  const FollowUpHintWidget(
+      {Key? key, required this.indexSugg, required this.suggestionModules})
       : super(key: key);
 
   final int? indexSugg;
+  final Map<String, List<String>> suggestionModules;
 
   @override
   _FollowUpHintWidgetState createState() => _FollowUpHintWidgetState();
@@ -28,13 +30,13 @@ class _FollowUpHintWidgetState extends State<FollowUpHintWidget> {
           child: Center(
             child: Padding(
               padding: const EdgeInsets.all(3.0),
-              child: Text("",
-                  // suggestions_intro[hsc.englishSentence.value]![
-                  //     widget.indexSugg!],
+              child: Text(
+                  widget.suggestionModules[hsc.englishSentence.value]![
+                      widget.indexSugg!],
                   style: TextStyle(
                       color: Colors.black,
                       fontFamily: treMS,
-                      fontSize: SizeConfig.blockSizeHorizontal * 1.3)),
+                      fontSize: SizeConfig.blockSizeHorizontal * 2.5)),
             ),
           )),
     );

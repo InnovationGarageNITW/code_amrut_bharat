@@ -12,6 +12,7 @@ class FollowUpText extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(bottom: 10),
       child: Align(
+          alignment: Alignment.centerLeft,
           child: Text("Suggested Follow Up",
               style: TextStyle(
                   color: Colors.black,

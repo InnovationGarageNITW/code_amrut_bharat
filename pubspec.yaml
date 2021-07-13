@@ -13,7 +13,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   lottie: ^1.0.1
   get: any
-  audioplayers: ^0.19.1
+  #audioplayers: ^0.18.3
+  assets_audio_player: ^3.0.3+3
   path_provider: ^2.0.2
 
 dev_dependencies:

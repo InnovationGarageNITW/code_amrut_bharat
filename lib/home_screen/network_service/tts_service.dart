@@ -27,10 +27,8 @@ class TTService {
       };
 
       final jsonResponse = await _postJson(uri, json);
-      Timer(Duration(seconds: 4), () => print(jsonResponse));
       if (jsonResponse == null) return "";
       final String audioContent = await jsonResponse['audioContent'];
-      Timer(Duration(seconds: 4), () => print(audioContent));
       return audioContent;
     } on Exception catch (e) {
       print("here in exception${e}");

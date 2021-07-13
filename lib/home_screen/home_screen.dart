@@ -18,6 +18,7 @@ class HomeScreen extends StatelessWidget {
   final String moduleSelected;
   List<String> englishSentences_module = [];
   Map<String, Map<String, String>> translations_module = {};
+  Map<String, List<String>> suggestions_module = {};
 
   void chooseEnglishLangByModule() {
     if (moduleSelected == Modules.Introduction) {
@@ -34,12 +35,16 @@ class HomeScreen extends StatelessWidget {
   void chooseTranslatingLangByModule() {
     if (moduleSelected == Modules.Introduction) {
       translations_module = translations_intro;
+      suggestions_module = suggestions_intro;
     } else if (moduleSelected == Modules.Food) {
       translations_module = translations_food;
+      suggestions_module = suggestions_food;
     } else if (moduleSelected == Modules.Market) {
       translations_module = translations_market;
+      suggestions_module = suggestions_market;
     } else if (moduleSelected == Modules.Travel) {
       translations_module = translations_travel;
+      suggestions_module = suggestions_travel;
     }
   }
 
@@ -54,6 +59,28 @@ class HomeScreen extends StatelessWidget {
           children: [
             InstituteLogos(),
             //CustomAppBar(title: "Amrut Bharat"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Language: ${languageSelected}",
+                    style: TextStyle(
+                        fontFamily: treMS,
+                        fontSize: SizeConfig.blockSizeHorizontal * 3),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Module: $moduleSelected",
+                      style: TextStyle(
+                          fontFamily: treMS,
+                          fontSize: SizeConfig.blockSizeHorizontal * 3)),
+                )
+              ],
+            ),
+
             Expanded(
               child: ListView.builder(
                   itemCount: englishSentences_module.length,
@@ -70,10 +97,10 @@ class HomeScreen extends StatelessWidget {
                               index: index,
                               englishSentences: englishSentences_module),
                           trailing: TranslateButtonAndOptions(
-                            sentence: englishSentences_module[index],
-                            languageSelected: languageSelected,
-                            translations_module: translations_module,
-                          ),
+                              sentence: englishSentences_module[index],
+                              languageSelected: languageSelected,
+                              translations_module: translations_module,
+                              suggestions_module: suggestions_module),
                         ),
                       )),
             )

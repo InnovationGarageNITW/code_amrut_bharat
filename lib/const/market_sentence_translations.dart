@@ -9,7 +9,7 @@ const List<String> englishSentences_market = [
   "10 Rupees",
   "Where can I find -----",
   "can i get --- for -- much",
-  "What can --- do?",
+  //"What can --- do?",
   "are there any other colors?",
   "is there a larger size?",
   "is there a smaller size?",
@@ -117,7 +117,7 @@ const Map<String, Map<String, String>> translations_market = {
     "Where can I find -----":
         "நான் எங்கே காணலாம் ----- (Nāṉ eṅkē kāṇalām -----)",
     "can i get --- for -- much?": " ()",
-    "what can --- do?": " ()",
+    "What can --- do?": " ()",
     "are there any other colors?":
         "வேறு ஏதேனும் வண்ணங்கள் உள்ளதா? (Vēṟu ētēṉum vaṇṇaṅkaḷ uḷḷatā?)",
     "is there a larger size?":
@@ -125,7 +125,7 @@ const Map<String, Map<String, String>> translations_market = {
     "is there a smaller size?": "சிறிய அளவு உள்ளதா? (Ciṟiya aḷavu uḷḷatā?)",
     "can you show me similar products?":
         "இதே போன்ற தயாரிப்புகளை எனக்குக் காட்ட முடியுமா? (Itē pōṉṟa tayārippukaḷai eṉakkuk kāṭṭa muṭiyumā?)",
-    "Can I pay cash?": "நான் பணம் செலுத்தலாமா? (Nāṉ paṇam celuttalāmā?)",
+    "can I pay cash?": "நான் பணம் செலுத்தலாமா? (Nāṉ paṇam celuttalāmā?)",
     "is this the product you were looking for?":
         "இது நீங்கள் தேடிய தயாரிப்புதானா? (Itu nīṅkaḷ tēṭiya tayāripputāṉā?)",
     "Can I pay through card?":
@@ -138,7 +138,7 @@ const Map<String, Map<String, String>> translations_market = {
         "ஏதாவது தள்ளுபடி உள்ளதா? (Ētāvatu taḷḷupaṭi uḷḷatā?)",
     "Can I exchange this?":
         "இதை நான் பரிமாற முடியுமா? (Itai nāṉ parimāṟa muṭiyumā?)",
-    "Can you help me?":
+    "can you help me?":
         "நீங்கள் எனக்கு உதவ முடியுமா? (Nīṅkaḷ eṉakku utava muṭiyumā?)",
     "Where is the shopping cart?": "வணிக வண்டி எங்கே? (Vaṇika vaṇṭi eṅkē?)",
   },
@@ -154,13 +154,13 @@ const Map<String, Map<String, String>> translations_market = {
     "Where can I find -----":
         "আমি কোথায় খুঁজে পাব ----- (Āmi kōthāẏa khum̐jē pāba -----)",
     "can i get --- for -- much?": " ()",
-    "what can --- do?": " ()",
+    "What can --- do?": " ()",
     "are there any other colors?": "অন্য কোন রঙ আছে? (An'ya kōna raṅa āchē?)",
     "is there a larger size?": "বড় আকার আছে? (Baṛa ākāra āchē?)",
     "is there a smaller size?": "একটি ছোট আকার আছে? (Choto ākāra āchē?)",
     "can you show me similar products?":
         "আপনি কি আমাকে অনুরূপ পণ্য প্রদর্শন করতে পারেন? (Āpani ki āmākē anurūpa paṇya pradarśana karatē pārēna?)",
-    "Can I pay cash?": "আমি নগদ দিতে পারি? (Āmi nagada ditē pāri?)",
+    "can I pay cash?": "আমি নগদ দিতে পারি? (Āmi nagada ditē pāri?)",
     "is this the product you were looking for?":
         "এই আপনি কি পণ্যটি খুঁজছিলেন? (Ē'i āpani ki paṇyaṭi khum̐jachilēna?)",
     "Can I pay through card?":
@@ -172,7 +172,7 @@ const Map<String, Map<String, String>> translations_market = {
     "Is there any discount?": "কোন ছাড় আছে? (Kōna chāṛa āchē?)",
     "Can I exchange this?":
         "আমি কি এই বিনিময় করতে পারি? (Āmi ki ē'i binimaẏa karatē pāri?)",
-    "Can you help me?":
+    "can you help me?":
         "আপনি কি আমাকে সাহায্য করতে পারেন? (Āpani ki āmākē sāhāyya karatē pārēna?)",
     "Where is the shopping cart?":
         "আপনি কি আমাকে সাহায্য করতে পারেন? (Āpani ki āmākē sāhāyya karatē pārēna?)",
@@ -190,7 +190,7 @@ const Map<String, Map<String, String>> translations_market = {
     "Where can I find -----":
         "എനിക്ക് എവിടെ കണ്ടെത്താനാകും ----- (enikk eviṭe kaṇṭettānākuṁ -----)",
     "can i get --- for -- much?": " ()",
-    "what can --- do?": " ()",
+    "What can --- do?": " ()",
     "are there any other colors?":
         "മറ്റെന്തെങ്കിലും നിറങ്ങളുണ്ടോ? (maṟṟenteṅkiluṁ niṟaṅṅaḷuṇṭēā?)",
     "is there a larger size?":
@@ -198,7 +198,7 @@ const Map<String, Map<String, String>> translations_market = {
     "is there a smaller size?": "ചെറിയ വലിപ്പമുണ്ടോ? (ceṟiya valippamuṇṭēā?)",
     "can you show me similar products?":
         "നിങ്ങൾക്ക് സമാന ഉൽപ്പന്നങ്ങൾ കാണിക്കാമോ? (niṅṅaḷkk samāna ulppannaṅṅaḷ kāṇikkāmēā?)",
-    "Can I pay cash?": "എനിക്ക് പണം നൽകാമോ? (enikk paṇaṁ nalkāmēā?)",
+    "can I pay cash?": "എനിക്ക് പണം നൽകാമോ? (enikk paṇaṁ nalkāmēā?)",
     "is this the product you were looking for?":
         "ഇത് നിങ്ങൾ അന്വേഷിച്ച ഉൽപ്പന്നമാണോ? (it niṅṅaḷ anvēṣicca ulppannamāṇēā?)",
     "Can I pay through card?":
@@ -211,7 +211,7 @@ const Map<String, Map<String, String>> translations_market = {
         "എന്തെങ്കിലും കിഴിവുണ്ടോ? (enteṅkiluṁ kiḻivuṇṭēā?)",
     "Can I exchange this?":
         "എനിക്ക് ഇത് കൈമാറാൻ കഴിയുമോ? (enikk it kaimāṟān kaḻiyumēā?)",
-    "Can you help me?": "എന്നെ സഹായിക്കാമോ? (enne sahāyikkāmēā?)",
+    "can you help me?": "എന്നെ സഹായിക്കാമോ? (enne sahāyikkāmēā?)",
     "Where is the shopping cart?":
         "ഷോപ്പിംഗ് കാർട്ട് എവിടെയാണ്? (ṣēāppiṅg kārṭṭ eviṭeyāṇ?)",
   },
@@ -229,13 +229,13 @@ const Map<String, Map<String, String>> translations_market = {
     "Where can I find -----":
         "ನನಗೆ ಎಲ್ಲಿ ಸಿಗಬಲ್ಲುದು ----- (Nanage elli sigaballudu -----)",
     "can i get --- for -- much?": " ()",
-    "what can --- do?": " ()",
+    "What can --- do?": " ()",
     "are there any other colors?": "ಬೇರೆ ಬಣ್ಣಗಳಿವೆಯೇ? (Bēre baṇṇagaḷiveyē?)",
     "is there a larger size?": "ದೊಡ್ಡ ಗಾತ್ರವಿದೆಯೇ? (Doḍḍa gātravideyē?)",
     "is there a smaller size?": "ಸಣ್ಣ ಗಾತ್ರವಿದೆಯೇ? (Saṇṇa gātravideyē?)",
     "can you show me similar products?":
         "ನೀವು ನನಗೆ ಇದೇ ರೀತಿಯ ಉತ್ಪನ್ನಗಳನ್ನು ತೋರಿಸಬಹುದೇ? (Nīvu nanage idē rītiya utpannagaḷannu tōrisabahudē?)",
-    "Can I pay cash?":
+    "can I pay cash?":
         "ನಾನು ಹಣವನ್ನು ಪಾವತಿಸಬಹುದೇ? (Nānu haṇavannu pāvatisabahudē?)",
     "is this the product you were looking for?":
         "ಇದು ನೀವು ಹುಡುಕುತ್ತಿದ್ದ ಉತ್ಪನ್ನವೇ? (Idu nīvu huḍukuttidda utpannavē?)",
@@ -248,7 +248,7 @@ const Map<String, Map<String, String>> translations_market = {
     "Is there any discount?": "ಯಾವುದೇ ರಿಯಾಯಿತಿ ಇದೆಯೇ? (Yāvudē riyāyiti ideyē?)",
     "Can I exchange this?":
         "ನಾನು ಇದನ್ನು ವಿನಿಮಯ ಮಾಡಿಕೊಳ್ಳಬಹುದೇ? (Nānu idannu vinimaya māḍikoḷḷabahudē?)",
-    "Can you help me?":
+    "can you help me?":
         "ನೀವು ನನಗೆ ಸಹಾಯ ಮಾಡಬಹುದೇ? (Nīvu nanage sahāya māḍabahudē?)",
     "Where is the shopping cart?":
         "ನೀವು ನನಗೆ ಸಹಾಯ ಮಾಡಬಹುದೇ? (Nīvu nanage sahāya māḍabahudē?)",
@@ -266,16 +266,16 @@ const Map<String, Map<String, String>> translations_market = {
     "10 Rupees": "10 रुपये (10 Rupayē)",
     "Where can I find -----":
         "मला कोठे सापडेल ----- (Malā kōṭhē sāpaḍēla -----)",
-    "can i get --- for -- much?":
+    "can i get --- for -- much":
         "मी मिळवू शकतो --- जास्त -? (Mī miḷavū śakatō --- jāsta -?)",
-    "what can --- do?": "काय करू शकतो ---? (Kāya karū śakatō ---?)",
+    "What can --- do?": "काय करू शकतो ---? (Kāya karū śakatō ---?)",
     "are there any other colors?":
         "इतर कोणतेही रंग आहेत? (Itara kōṇatēhī raṅga āhēta?)",
     "is there a larger size?": "तेथे मोठे आकार आहे? (Tēthē mōṭhē ākāra āhē?)",
     "is there a smaller size?": "एक लहान आकार आहे? (Ēka lahāna ākāra āhē?)",
     "can you show me similar products?":
         "आपण मला समान उत्पादने दर्शवू शकता? (Āpaṇa malā samāna utpādanē darśavū śakatā?)",
-    "Can I pay cash?": "मी पैसे देऊ शकतो का? (Mī paisē dē'ū śakatō kā?)",
+    "can I pay cash?": "मी पैसे देऊ शकतो का? (Mī paisē dē'ū śakatō kā?)",
     "is this the product you were looking for?":
         "हे आपण शोधत असलेले उत्पादन आहे? (Hē āpaṇa śōdhata asalēlē utpādana āhē?)",
     "Can I pay through card?":
@@ -286,94 +286,69 @@ const Map<String, Map<String, String>> translations_market = {
         "तुम्ही होम डिलिव्हरी करता का? (Tumhī hōma ḍilivharī karatā kā?)",
     "Is there any discount?": "काही सूट आहे का? (Kāhī sūṭa āhē kā?)",
     "Can I exchange this?": "मी हे बदलू शकतो? (Mī hē badalū śakatō?)",
-    "Can you help me?":
+    "can you help me?":
         "आपण मला मदत करू शकता? (Āpaṇa malā madata karū śakatā?)",
     "Where is the shopping cart?":
         "शॉपिंग कार्ट कुठे आहे? (Śŏpiṅga kārṭa kuṭhē āhē?)",
   }
 };
 
-
 const Map<String, List<String>> suggestions_market = {
   "I want to buy this.": [
     'How much does this cost',
-    'Can I get --- for ----- much?'
+    'can i get --- for -- much'
   ],
   "I want to return this.": [
-    'Can you help me',
-    'Can you show me similar products'
+    'can you help me?',
+    'can you show me similar products?'
   ],
-  "How much does this cost": ['Can I pay in cash?', ' Is there any discount?'],
-  "1 Kg": ['500 grams', ' 100 Rupees'],
-  "500 Grams": ['1 kg', ' 100 rupees'],
-  "100 Rupees": ['10 rupees', ' 50 rupees'],
-  "50 Rupees": ['10 rupees',
-  ' 100 rupees'],
-  "10 Rupees":[
-    '100 rupees',
-    ' 50 rupees'
+  "How much does this cost": ['can I pay cash?', 'Is there any discount?'],
+  "1 Kg": ['500 Grams', '100 Rupees'],
+  "500 Grams": ['1 Kg', '100 Rupees'],
+  "100 Rupees": ['10 Rupees', '50 Rupees'],
+  "50 Rupees": ['10 Rupees', ' 100 rupees'],
+  "10 Rupees": ['100 Rupees', '50 Rupees'],
+  "Where can I find -----": ['Thank you'],
+  "can i get --- for -- much": ['Is there any discount?', 'can I pay cash?'],
+  "What can --- do?": [
+    'can you show me similar products?',
+    'are there any other colors?'
   ],
-  "Where can I find -----":[
-    'Thank you'
+  "are there any other colors?": [
+    'is there a larger size?',
+    'is there a smaller size?',
+    'How much does this cost'
   ],
-  "can i get --- for -- much":[
-    'Is there any discount?',
-    ' Can I pay in cash?'
-  ],
-  "What can --- do?":[
-    'Can you show me similar products?',
-    ' are there any other colors?'
-  ],
-  "are there any other colors?":[
-    'Is there a larger size?',
-    ' Is there a smaller size?',
-    ' How much does this cost?'
-  ],
-  "is there a larger size?":[
-    'How much does this cost?',
+  "is there a larger size?": [
+    'How much does this cost',
     ' Can you show me similiar products?'
   ],
-  "is there a smaller size?":[
-    'How much does this cost?',
+  "is there a smaller size?": [
+    'How much does this cost',
     ' Can you show me similiar products?'
   ],
-  "can you show me similar products?":[
-    'How much does this cost?',
-    ' Is there a larger size?',
-    ' Is there a smaller size?'
+  "can you show me similar products?": [
+    'How much does this cost',
+    'is there a larger size?',
+    'is there a smaller size?'
   ],
-  "can I pay cash?":[
+  "can I pay cash?": ['Do you do home delivery?', 'Is there any discount?'],
+  "is this the product you were looking for?": ['can you help me?'],
+  "Can I pay through card?": ['Is there any discount?', 'can I pay cash?'],
+  "Will it be available tomorrow?": [
     'Do you do home delivery?',
     'Is there any discount?'
   ],
-  "is this the product you were looking for?":[
-    'Thank you. I am sorry.'
+  "Do you do home delivery?": ['can I pay cash?', 'Can I pay through card?'],
+  "Is there any discount?": ['can I pay cash?', 'Can I pay through card?'],
+  "Can I exchange this?": [
+    'can you help me?',
+    'is there a larger size?',
+    'is there a smaller size?'
   ],
-  "Can I pay through card?":[
-    'Is there any discount?',
-    ' Can I pay cash?'
-  ],
-  "Will it be available tomorrow?":[
-    'Do you do home delivery?',' Is there any discount?'
-  ],
-  "Do you do home delivery?":[
-    'Can I pay cash?',
-    ' Can I pay through card?'
-  ],
-  "Is there any discount?":[
-    'Can I pay cash?',
-    ' Can I pay through card?'
-  ],
-  "Can I exchange this?":[
-    'Can you help me?',
-    ' Is there a larger size?',
-    ' Is there a smaller size?'
-  ],
-  "can you help me?":[
+  "can you help me?": [
     'Can I exchange this? ',
-    'Can you show me similar product?'
+    'can you show me similar products?'
   ],
-  "Where is the shopping cart?":[
-    'Can you help me?'
-  ]
+  "Where is the shopping cart?": ['can you help me?']
 };

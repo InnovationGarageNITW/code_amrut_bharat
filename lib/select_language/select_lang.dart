@@ -62,7 +62,7 @@ class SelectLanguage extends StatelessWidget {
                                       fontFamily: treMS,
                                       fontWeight: FontWeight.bold,
                                       fontSize:
-                                          SizeConfig.blockSizeHorizontal * 2),
+                                          SizeConfig.blockSizeHorizontal * 4),
                                 ),
                               ),
                             ),

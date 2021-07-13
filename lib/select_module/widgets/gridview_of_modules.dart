@@ -43,7 +43,7 @@ class GridViewOfModules extends StatelessWidget {
                           color: Colors.black,
                           fontFamily: treMS,
                           fontWeight: FontWeight.bold,
-                          fontSize: SizeConfig.blockSizeHorizontal * 1.8),
+                          fontSize: SizeConfig.blockSizeHorizontal * 3),
                     ),
                   ),
                 ),

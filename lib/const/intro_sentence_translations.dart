@@ -1,7 +1,7 @@
 const List<String> englishSentences_intro = [
   'What is your name?',
   "How are you doing?",
-  "I am fine, thank you.",
+  //"I am fine, thank you.",
   "My name is ----",
   "Could you please speak slowly?",
   "Where do you live?",
@@ -11,7 +11,7 @@ const List<String> englishSentences_intro = [
   "What do you do?",
   "I work as a --------",
   "Can you help me?",
-  "Are you able to understand me",
+  //"Are you able to understand me",
   "Can you give me your phone number",
   "Thank you",
   "I am sorry",
@@ -314,7 +314,7 @@ const Map<String, List<String>> suggestions_intro = {
     'How are you doing?',
   ],
   'How are you doing?': [
-    'I am fine, thank you.',
+    //'I am fine, thank you.',
   ],
   'My name is ----': [
     "What is your name?",
@@ -336,7 +336,7 @@ const Map<String, List<String>> suggestions_intro = {
   "Thank you": ["Nice to meet you.", "Goodbye."],
   "I am sorry": ["Goodbye.", "Thank you"],
   "I understand.": ["Thank you", "Goodbye."],
-  "Goodbye": ["Thank you", "Nice to meet you."],
+  "Goodbye.": ["Thank you", "Nice to meet you."],
   "I do not understand.": ["Could you please speak slowly?", "I understand."],
   "Nice to meet you.": ["Thank you", "Goodbye."],
   "Come with me.": [

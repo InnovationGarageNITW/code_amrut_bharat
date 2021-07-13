@@ -7,7 +7,6 @@ import 'package:amrut_bharat/const/utils.dart';
 import 'package:amrut_bharat/const/wavenet_voice_const.dart';
 import 'package:amrut_bharat/home_screen/data/voice.dart';
 import 'package:amrut_bharat/navigation/navigation_const.dart';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:amrut_bharat/home_screen/network_service/tts_service.dart';
@@ -21,30 +20,9 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  AudioPlayer audioPlayer = AudioPlayer();
   @override
   void initState() {
-    //Timer(Duration(seconds: 5), () => {Navigator.pushNamed(context, rHome)});
-
     super.initState();
-  }
-
-  void synthesizeText(String text, String name) async {
-    // if (audioPlugin.state == AudioPlayerState.PLAYING) {
-    //   await audioPlugin.stop();
-    // }
-    final String audioContent = await TTService().synthesizeText(
-        "আপনি কেমন আছেন", Wavenet.BanglaVoiceName, Wavenet.BanglaLanguageCode);
-    if (audioContent.isEmpty) return;
-    final bytes = Base64Decoder().convert(audioContent, 0, audioContent.length);
-    final dir = await getTemporaryDirectory();
-    final file = File('${dir.path}/wavenet.mp3');
-    await file.writeAsBytes(bytes);
-    //Timer(Duration(seconds: 5), () => print(file.path));
-    int result = await audioPlayer.play(file.path, isLocal: true);
-    if (result == 1) {
-      print("done");
-    }
   }
 
   @override

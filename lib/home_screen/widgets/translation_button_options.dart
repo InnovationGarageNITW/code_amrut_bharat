@@ -10,7 +10,8 @@ import 'package:amrut_bharat/home_screen/domain/home_screen_controller.dart';
 import 'package:amrut_bharat/home_screen/network_service/tts_service.dart';
 import 'package:amrut_bharat/home_screen/widgets/follow_up_hint.dart';
 import 'package:amrut_bharat/home_screen/widgets/follow_up_text.dart';
-import 'package:audioplayers/audioplayers.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
+//import 'package:audioplayers/audioplayers.dart';
 //import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -21,13 +22,14 @@ class TranslateButtonAndOptions extends StatefulWidget {
       {Key? key,
       required this.sentence,
       required this.languageSelected,
+      required this.suggestions_module,
       required this.translations_module})
       : super(key: key);
 
   final String sentence;
   final String languageSelected;
   final Map<String, Map<String, String>> translations_module;
-
+  final Map<String, List<String>> suggestions_module;
   @override
   _TranslateButtonAndOptionsState createState() =>
       _TranslateButtonAndOptionsState();
@@ -44,8 +46,8 @@ class _TranslateButtonAndOptionsState extends State<TranslateButtonAndOptions> {
   String _code = "";
 
   HomeScreenController hsc = Get.put(HomeScreenController());
-  AudioPlayer audioPlayer = AudioPlayer();
-
+  //AudioPlayer audioPlayer = AudioPlayer();
+  final assetsAudioPlayer = AssetsAudioPlayer();
   void fixVariables(String languageSelected, String sentence) {
     if (languageSelected == Language.Bangla) {
       _text = sentence;
@@ -85,11 +87,19 @@ class _TranslateButtonAndOptionsState extends State<TranslateButtonAndOptions> {
     final dir = await getTemporaryDirectory();
     final file = File('${dir.path}/wavenet.mp3');
     await file.writeAsBytes(bytes);
-    //Timer(Duration(seconds: 5), () => print(file.path));
-    int result = await audioPlayer.play(file.path, isLocal: true);
-    if (result == 1) {
-      hsc.setAudioLoading(false);
-    }
+//create a new player
+    final assetsAudioPlayer = AssetsAudioPlayer();
+
+    assetsAudioPlayer.open(
+      Audio.file(file.path),
+    );
+    assetsAudioPlayer.play();
+    hsc.setAudioLoading(false);
+
+    // int result = await audioPlayer.play(file.path, isLocal: true);
+    // if (result == 1) {
+    //   hsc.setAudioLoading(false);
+    // }
   }
 
   @override
@@ -101,105 +111,106 @@ class _TranslateButtonAndOptionsState extends State<TranslateButtonAndOptions> {
         children: [
           ElevatedButton(
             onPressed: () {
-              print(
-                  "Sentence-> ${widget.sentence},trans_module->${widget.translations_module[widget.languageSelected]},lang->${widget.languageSelected}");
               hsc.setEnglishSentence(widget.sentence);
-              print("English sentence -> ${hsc.englishSentence.value}");
 
               hsc.setDialogBoxTranslation(widget.translations_module[
                   widget.languageSelected]![hsc.englishSentence.value]!);
-              print(
-                  "Dialogbox translation -> ${hsc.dialogBoxTranslation.value}");
 
-              // hsc.setFollowUpList(hsc.englishSentence.value,
-              //     suggestions_intro[hsc.englishSentence.value]!);
+              hsc.setFollowUpList(hsc.englishSentence.value,
+                  widget.suggestions_module[hsc.englishSentence.value]!);
               showDialog(
                   context: context,
                   builder: (context) {
                     return Obx(
                       () => AlertDialog(
-                        title: Text(hsc.dialogBoxTranslation.value.toString()),
+                        title: Text(
+                          hsc.dialogBoxTranslation.value.toString(),
+                          style: TextStyle(
+                              fontSize: SizeConfig.blockSizeHorizontal * 4),
+                        ),
                         content: Container(
                           height:
                               SizeConfig.getScreenSize(context).height * 0.3,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              //FollowUpText(),
-                              // SizedBox(
-                              //   height:
-                              //       SizeConfig.getScreenSize(context).height *
-                              //           0.2,
-                              //   width: SizeConfig.blockSizeHorizontal * 60,
-                              //   child: GridView.builder(
-                              //       gridDelegate:
-                              //           SliverGridDelegateWithFixedCrossAxisCount(
-                              //         crossAxisCount: 2,
-                              //         childAspectRatio: MediaQuery.of(context)
-                              //                 .size
-                              //                 .width /
-                              //             (MediaQuery.of(context).size.height /
-                              //                 4),
-                              //       ),
-                              //       scrollDirection: Axis.vertical,
-                              //       itemCount: hsc
-                              //           .followUpList[
-                              //               hsc.englishSentence.value]!
-                              //           .length,
-                              //       itemBuilder: (context, indexSugg) {
-                              //         return GestureDetector(
-                              //             onTap: () {
-                              //               hsc.setEnglishSentence(
-                              //                   hsc.followUpList[hsc
-                              //                       .englishSentence
-                              //                       .value]![indexSugg]);
+                              GestureDetector(
+                                onTap: () async {
+                                  hsc.setAudioLoading(true);
+                                  fixVariables(
+                                      widget.languageSelected, widget.sentence);
+                                  var lastIndex = hsc.dialogBoxTranslation.value
+                                      .indexOf("(");
+                                  synthesizeText(
+                                      hsc.dialogBoxTranslation.value
+                                          .substring(0, lastIndex),
+                                      _name,
+                                      _code);
+                                },
+                                child: Obx(() => hsc.getAudioLoading()
+                                    ? Align(child: CircularProgressIndicator())
+                                    : Align(
+                                        child: Icon(
+                                          Icons.volume_up,
+                                          color: Colors.blueAccent,
+                                          size: SizeConfig.blockSizeHorizontal *
+                                              10,
+                                        ),
+                                      )),
+                              ),
+                              Spacer(),
+                              FollowUpText(),
+                              SizedBox(
+                                height:
+                                    SizeConfig.getScreenSize(context).height *
+                                        0.2,
+                                width: SizeConfig.blockSizeHorizontal * 60,
+                                child: GridView.builder(
+                                    gridDelegate:
+                                        SliverGridDelegateWithFixedCrossAxisCount(
+                                      crossAxisCount: 2,
+                                      childAspectRatio: MediaQuery.of(context)
+                                              .size
+                                              .width /
+                                          (MediaQuery.of(context).size.height /
+                                              4),
+                                    ),
+                                    scrollDirection: Axis.vertical,
+                                    itemCount: widget
+                                        .suggestions_module[
+                                            hsc.englishSentence.value]!
+                                        .length,
+                                    itemBuilder: (context, indexSugg) {
+                                      return GestureDetector(
+                                        onTap: () {
+                                          hsc.setEnglishSentence(
+                                              hsc.followUpList[hsc
+                                                  .englishSentence
+                                                  .value]![indexSugg]);
 
-                              //               hsc.setDialogBoxTranslation(
-                              //                   translations_intro['Telugu']![
-                              //                       hsc.englishSentence
-                              //                           .value]!);
-                              //               // hsc.setFollowUpList(
-                              //               //     hsc.englishSentence.value,
-                              //               //     suggestions_intro[hsc
-                              //               //         .englishSentence.value]!);
+                                          hsc.setDialogBoxTranslation(
+                                              widget.translations_module[
+                                                      widget.languageSelected]![
+                                                  hsc.englishSentence.value]!);
+                                          hsc.setFollowUpList(
+                                              hsc.englishSentence.value,
+                                              widget.suggestions_module[
+                                                  hsc.englishSentence.value]!);
 
-                              //               print(
-                              //                   "English sentence -> ${hsc.englishSentence.value},translations->${hsc.dialogBoxTranslation.value},followUpList->${hsc.followUpList}");
-                              //             },
-                              //             child: Container()
-                              //             // FollowUpHintWidget(
-                              //             //     indexSugg: indexSugg),
-                              //             );
-                              //       }),
-                              // )
+                                          print(
+                                              "English sentence -> ${hsc.englishSentence.value},translations->${hsc.dialogBoxTranslation.value},followUpList->${hsc.followUpList}");
+                                        },
+                                        child: FollowUpHintWidget(
+                                            suggestionModules:
+                                                widget.suggestions_module,
+                                            indexSugg: indexSugg),
+                                      );
+                                    }),
+                              )
                             ],
                           ),
                         ),
-                        actions: [
-                          GestureDetector(
-                            onTap: () async {
-                              hsc.setAudioLoading(true);
-                              fixVariables(
-                                  widget.languageSelected, widget.sentence);
-                              var lastIndex =
-                                  hsc.dialogBoxTranslation.value.indexOf("(");
-                              synthesizeText(
-                                  hsc.dialogBoxTranslation.value
-                                      .substring(0, lastIndex),
-                                  _name,
-                                  _code);
-                            },
-                            child: Obx(() => hsc.getAudioLoading()
-                                ? CircularProgressIndicator()
-                                : Align(
-                                    child: Icon(
-                                      Icons.volume_up,
-                                      color: Colors.blueAccent,
-                                      size: SizeConfig.blockSizeHorizontal * 5,
-                                    ),
-                                  )),
-                          )
-                        ],
+                        actions: [],
                       ),
                     );
                   });
@@ -216,38 +227,6 @@ class _TranslateButtonAndOptionsState extends State<TranslateButtonAndOptions> {
               ),
             ),
           ),
-          // SizedBox(
-          //   width: SizeConfig.getScreenSize(context).width *
-          //       0.1,
-          //   height:
-          //       SizeConfig.getScreenSize(context).height *
-          //           0.1,
-          //   child: DropdownButton(
-          //     isExpanded: true,
-          //     iconSize: SizeConfig.blockSizeHorizontal * 5,
-          //     style: TextStyle(color: Colors.blue),
-          //     items: ['Telugu', 'Tamil'].map(
-          //       (val) {
-          //         return DropdownMenuItem<String>(
-          //           value: val,
-          //           child: Text(val),
-          //         );
-          //       },
-          //     ).toList(),
-          //     onChanged: (val) {
-          //       showDialog(
-          //           context: context,
-          //           builder: (context) => AlertDialog(
-          //               title: Text(
-          //                   translations[val]![index])));
-          //       setState(
-          //         () {
-          //           // _dropDownValue = val.toString();
-          //         },
-          //       );
-          //     },
-          //   ),
-          // )
         ],
       ),
     );

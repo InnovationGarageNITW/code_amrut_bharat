@@ -46,7 +46,7 @@ const Map<String, Map<String, String>> translations_food = {
     "I want to order my food now":
         "मैं अब अपना खाना ऑर्डर करना चाहता हूं (main ab apana khaana ordar karana chaahata hoon)",
     "Is it spicy?": "क्या यह मसालेदार है? (kya yah masaaledaar hai?)",
-    "Whats the price of --- ": "कीमत क्या है --- (keemat kya hai ---)",
+    "Whats the price of ---": "कीमत क्या है --- (keemat kya hai ---)",
     "I suggest you eat -- here.":
         "मेरा सुझाव है कि तुम खाओ - यहाँ। (mera sujhaav hai ki tum khao - yahaan.)",
     "Can I get the menu":
@@ -83,7 +83,7 @@ const Map<String, Map<String, String>> translations_food = {
     "I want to order my food now":
         "నేను ఇప్పుడు నా ఆహారాన్ని ఆర్డర్ చేయాలనుకుంటున్నాను (Nēnu ippuḍu nā āhārānni ārḍar cēyālanukuṇṭunnānu)",
     "Is it spicy?": "ఇది కారంగా ఉందా? (Idi kāraṅgā undā?)",
-    "Whats the price of --- ": "--- యొక్క ధర ఏమిటి? (--- Yokka dhara ēmiṭi?)",
+    "Whats the price of ---": "--- యొక్క ధర ఏమిటి? (--- Yokka dhara ēmiṭi?)",
     "I suggest you eat -- here.":
         "నేను మీరు తినమని సూచిస్తున్నాను - ఇక్కడ. (Nēnu mīru tinamani sūcistunnānu - ikkaḍa.)",
     "Can I get the menu": "నేను మెను పొందవచ్చా (Nēnu menu pondavaccā)",
@@ -119,7 +119,7 @@ const Map<String, Map<String, String>> translations_food = {
     "I want to order my food now":
         "ನಾನು ಈಗ ನನ್ನ ಆಹಾರವನ್ನು ಆದೇಶಿಸಲು ಬಯಸುತ್ತೇನೆ (Nānu īga nanna āhāravannu ādēśisalu bayasuttēne)",
     "Is it spicy?": "ಇದು ಮಸಾಲೆಯುಕ್ತವಾಗಿದೆಯೇ? (Idu masāleyuktavāgideyē?)",
-    "Whats the price of --- ": "--- ಏನು ಬೆಲೆ (--- Ēnu bele)",
+    "Whats the price of ---": "--- ಏನು ಬೆಲೆ (--- Ēnu bele)",
     "I suggest you eat -- here.":
         "ನೀವು ತಿನ್ನಲು ಸೂಚಿಸುತ್ತೇನೆ - ಇಲ್ಲಿ. (Nīvu tinnalu sūcisuttēne - illi.)",
     "Can I get the menu": "ನಾನು ಮೆನು ಪಡೆಯಬಹುದೇ? (Nānu menu paḍeyabahudē?)",
@@ -155,7 +155,7 @@ const Map<String, Map<String, String>> translations_food = {
     "I want to order my food now":
         "എനിക്ക് ഇപ്പോൾ എന്റെ ഭക്ഷണം ഓർഡർ ചെയ്യണം (enikk ippēāḷ enṟe bhakṣaṇaṁ ōrḍar ceyyaṇaṁ)",
     "Is it spicy?": "ഇത് മസാലയാണോ? (it masālayāṇēā?)",
-    "Whats the price of --- ": "--- ന്റെ വില എന്താണ്? (--- nṟe vila entāṇ?)",
+    "Whats the price of ---": "--- ന്റെ വില എന്താണ്? (--- nṟe vila entāṇ?)",
     "I suggest you eat -- here.":
         "കഴിക്കാൻ ഞാൻ നിർദ്ദേശിക്കുന്നു - ഇവിടെ. (kaḻikkān ñān nirddēśikkunnu - iviṭe.)",
     "Can I get the menu": "എനിക്ക് മെനു ലഭിക്കുമോ? (enikk menu labhikkumēā?)",
@@ -189,7 +189,7 @@ const Map<String, Map<String, String>> translations_food = {
     "I want to order my food now":
         "मला आता माझ्या अन्नाची मागणी करायची आहे (Malā ātā mājhyā annācī māgaṇī karāyacī āhē)",
     "Is it spicy?": "ते मसालेदार आहे का? (Tē masālēdāra āhē kā?)",
-    "Whats the price of --- ": "किंमत काय आहे --- (Kimmata kāya āhē ---)",
+    "Whats the price of ---": "किंमत काय आहे --- (Kimmata kāya āhē ---)",
     "I suggest you eat -- here.":
         "मी तुम्हाला खाणे सुचवितो - येथे. (Mī tumhālā khāṇē sucavitō - yēthē.)",
     "Can I get the menu": "मी मेनू मिळवू शकतो? (Mī mēnū miḷavū śakatō?)",
@@ -225,7 +225,7 @@ const Map<String, Map<String, String>> translations_food = {
     "I want to order my food now":
         "நான் இப்போது என் உணவை ஆர்டர் செய்ய விரும்புகிறேன் (Nāṉ ippōtu eṉ uṇavai ārṭar ceyya virumpukiṟēṉ)",
     "Is it spicy?": "இது காரமானதா? (Itu kāramāṉatā?)",
-    "Whats the price of --- ": "--- இன் விலை என்ன? (--- Iṉ vilai eṉṉa?)",
+    "Whats the price of ---": "--- இன் விலை என்ன? (--- Iṉ vilai eṉṉa?)",
     "I suggest you eat -- here.":
         "நீங்கள் சாப்பிட பரிந்துரைக்கிறேன் - இங்கே. (Nīṅkaḷ cāppiṭa parinturaikkiṟēṉ - iṅkē.)",
     "Can I get the menu":
@@ -237,9 +237,7 @@ const Map<String, Map<String, String>> translations_food = {
         "இப்போது சுவையான ஒன்றை சாப்பிடுகிறீர்களா? (Ippōtu cuvaiyāṉa oṉṟai cāppiṭukiṟīrkaḷā?)",
     "Do you have ---": "உங்களிடம் --- (Uṅkaḷiṭam ---)",
   },
-
   "Bangla": {
-
     "How long will my food take":
         "আমার খাবার কতক্ষণ লাগবে (Āmāra khābāra katakṣaṇa lāgabē)",
     "Can you pack my food as take-away":
@@ -262,7 +260,7 @@ const Map<String, Map<String, String>> translations_food = {
     "I want to order my food now":
         "আমি এখন আমার খাবার অর্ডার করতে চাই (Āmi ēkhana āmāra khābāra arḍāra karatē cā'i)",
     "Is it spicy?": "এটা কি মশলাদার? (Ēṭā ki maśalādāra?)",
-    "Whats the price of --- ": "দাম কি --- (Dāma ki ---)",
+    "Whats the price of ---": "দাম কি --- (Dāma ki ---)",
     "I suggest you eat -- here.":
         "আমি আপনাকে খাওয়ার পরামর্শ দিই - এখানে। (Āmi āpanākē khā'ōẏāra parāmarśa di'i - ēkhānē.)",
     "Can I get the menu": "আমি কি মেনু পেতে পারি? (Āmi ki mēnu pētē pāri?)",
@@ -275,23 +273,22 @@ const Map<String, Map<String, String>> translations_food = {
   }
 };
 
-
 const Map<String, List<String>> suggestions_food = {
-  'How long will my food take': ['Thank you', 'Can I get some water?'],
+  'How long will my food take': ['Thank you', 'Can I get some water'],
   'Can you pack my food as take-away': [
-    'Whats the price of ---?',
-    'Is it spicy',
-    'Can I get the menu?'
+    'Whats the price of ---',
+    'Is it spicy?',
+    'Can I get the menu'
   ],
   'Do you make it fresh': [
-    'Whats the price of ---?',
-    'Is it spicy',
-    'Can I get the menu?'
+    'Whats the price of ---',
+    'Is it spicy?',
+    'Can I get the menu'
   ],
   'Are there any specials on the menu?': [
-    'Whats the price of ---?',
-    'Is it spicy',
-    'Can I get the menu?'
+    'Whats the price of ---',
+    'Is it spicy?',
+    'Can I get the menu'
   ],
   'Can you retake my order': [
     'Are there any specials on the menu?',
@@ -300,44 +297,43 @@ const Map<String, List<String>> suggestions_food = {
   'Can i get extra ---(ketchup)?': ['Thank you.'],
   'The food is great here': ['Thank you.'],
   'Did you like the food here': [
-    'Thank you for having us.',
-    'We loved the dinner.'
+    'Thank you for having us. We loved the dinner.',
   ],
   'Does this place offer delivery?': [
-    'I want to order my food now.',
-    'Can I get the menu?'
+    'I want to order my food now',
+    'Can I get the menu'
   ],
-  'Is this healthy?': ['Is it spicy?', 'Can you retake my order?'],
+  'Is this healthy?': ['Is it spicy?', 'Can you retake my order'],
   'Can I get some water': [
     'Thank you.',
-    'Can I get the menu?',
-    'I want to order my food now.'
+    'Can I get the menu',
+    'I want to order my food now'
   ],
   'I want to order my food now': [
     'Are there any specials on the menu?',
     'Whats the price of ---'
   ],
-  'Is it spicy?': ['Is it healthy?', 'Can your retake my order?'],
+  'Is it spicy?': ['Is it healthy?', 'Can you retake my order'],
   'Whats the price of ---': [
     'Is it spicy?',
     'Is this vegetarian?',
     'Can you retake my order?'
   ],
-  'I suggest you eat -- here.': ['Can you retake my order?', 'Thank you.'],
-  'Can I get the menu': ['Thank you.', 'I want to order my food now.'],
+  'I suggest you eat -- here.': ['Can you retake my order', 'Thank you.'],
+  'Can I get the menu': ['Thank you.', 'I want to order my food now'],
   'Thank you for having us. We loved the dinner.': [
     'Nice to meet you.',
     'Goodbye.'
   ],
   'Is this vegetarian ?': ['Is it spicy?'],
   'Eating something delicious right now?': [
-    'Thank you for having us.',
+    'Thank you for having us. We loved the dinner.',
     'We loved it.'
   ],
   'Do you have ---': [
-    'Whats the price of ---?',
-    'Is it spicy',
-    'Can I get the menu?'
+    'Whats the price of ---',
+    'Is it spicy?',
+    'Can I get the menu'
   ],
 };
 

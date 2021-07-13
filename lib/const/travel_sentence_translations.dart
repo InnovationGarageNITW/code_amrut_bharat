@@ -10,8 +10,8 @@ const List<String> englishSentences_travel = [
   "Where are the stores?",
   "this season is the best time to visit ---.",
   "whats the best place to visit this summer",
-  "whats the best place to visit during vacation"
-      "where can i make a call?",
+  "whats the best place to visit during vacation",
+  "where can i make a call?",
   "how often do u travel",
   "We had a great time, thank you.",
   "how long did you travel for",
@@ -43,7 +43,7 @@ const Map<String, Map<String, String>> translations_travel = {
         "यह मौसम घूमने का सबसे अच्छा समय है ---। (yah mausam ghoomane ka sabase achchha samay hai --)",
     "whats the best place to visit this summer":
         "इस गर्मी में घूमने के लिए सबसे अच्छी जगह कौन सी है? (is garmee mein ghoomane ke lie sabase achchhee jagah kaun see hai?)",
-    "whats the best place to visit during vacation ":
+    "whats the best place to visit during vacation":
         "छुट्टियों के दौरान घूमने के लिए सबसे अच्छी जगह कौन सी है? (छुट्टियों के दौरान घूमने के लिए सबसे अच्छी जगह कौन सी है?)",
     "where can i make a call?":
         "मैं कहाँ कॉल कर सकता हूँ? (main kahaan kol kar sakata hoon?)",
@@ -84,7 +84,7 @@ const Map<String, Map<String, String>> translations_travel = {
         "ఈ సీజన్ సందర్శించడానికి ఉత్తమ సమయం --- (Ī sījan sandarśin̄caḍāniki uttama samayaṁ -)",
     "whats the best place to visit this summer":
         "ఈ వేసవిని సందర్శించడానికి ఉత్తమ ప్రదేశం ఏమిటి (Ī vēsavini sandarśin̄caḍāniki uttama pradēśaṁ ēmiṭi)",
-    "whats the best place to visit during vacation ":
+    "whats the best place to visit during vacation":
         "సెలవుల్లో సందర్శించడానికి ఉత్తమమైన ప్రదేశం ఏమిటి (Selavullō sandarśin̄caḍāniki uttamamaina pradēśaṁ ēmiṭi)",
     "where can i make a call?":
         "నేను ఎక్కడ కాల్ చేయగలను? (Nēnu ekkaḍa kāl cēyagalanu?)",
@@ -126,7 +126,7 @@ const Map<String, Map<String, String>> translations_travel = {
         "இந்த பருவம் பார்வையிட சிறந்த நேரம் -- (Inta paruvam pārvaiyiṭa ciṟanta nēram ---.)",
     "whats the best place to visit this summer":
         "இந்த கோடையில் பார்வையிட சிறந்த இடம் எது (Inta kōṭaiyil pārvaiyiṭa ciṟanta iṭam etu)",
-    "whats the best place to visit during vacation ":
+    "whats the best place to visit during vacation":
         "விடுமுறையின் போது பார்வையிட சிறந்த இடம் எது (Viṭumuṟaiyiṉ pōtu pārvaiyiṭa ciṟanta iṭam etu)",
     "where can i make a call?":
         "நான் எங்கே அழைக்க முடியும்? (Nāṉ eṅkē aḻaikka muṭiyum?)",
@@ -170,7 +170,7 @@ const Map<String, Map<String, String>> translations_travel = {
         "ഈ വേനൽക്കാലത്ത് സന്ദർശിക്കാനുള്ള ഏറ്റവും നല്ല സ്ഥലം (sandarśikkānuḷḷa ēṟṟavuṁ nalla samayamāṇ ī sīsaṇ ---.)",
     "whats the best place to visit this summer":
         "അവധിക്കാലത്ത് സന്ദർശിക്കാനുള്ള ഏറ്റവും നല്ല സ്ഥലം (ī vēnalkkālatt sandarśikkānuḷḷa mikacca sthalaṁ ētāṇ?)",
-    "whats the best place to visit during vacation ":
+    "whats the best place to visit during vacation":
         "എനിക്ക് എവിടെ ഒരു കോൾ ഉണ്ടാക്കാം? (avadhikkālatt sandarśikkān ēṟṟavuṁ anuyēājyamāya sthalaṁ ētāṇ?)",
     "where can i make a call?":
         "നിങ്ങൾ എത്ര തവണ യാത്ര ചെയ്യുന്നു (enikk eviṭe ninn oru kēāḷ ceyyānākuṁ?)",
@@ -211,7 +211,7 @@ const Map<String, Map<String, String>> translations_travel = {
         "ಈ ಋತುವಿನಲ್ಲಿ ಭೇಟಿ ನೀಡಲು ಉತ್ತಮ ಸಮಯ ---. (Ī season tuvinalli bhēṭi nīḍalu uttama samaya ---.)",
     "whats the best place to visit this summer":
         "ಈ ಬೇಸಿಗೆಯಲ್ಲಿ ಭೇಟಿ ನೀಡಲು ಉತ್ತಮ ಸ್ಥಳ ಯಾವುದು (Ī bēsigeyalli bhēṭi nīḍalu uttama sthaḷa yāvudu)",
-    "whats the best place to visit during vacation ":
+    "whats the best place to visit during vacation":
         "ರಜೆಯ ಸಮಯದಲ್ಲಿ ಭೇಟಿ ನೀಡಲು ಉತ್ತಮ ಸ್ಥಳ ಯಾವುದು (Rajeya samayadalli bhēṭi nīḍalu uttama sthaḷa yāvudu)",
     "where can i make a call?":
         "ನಾನು ಎಲ್ಲಿ ಕರೆ ಮಾಡಬಹುದು? (Nānu elli kare māḍabahudu?)",
@@ -253,7 +253,7 @@ const Map<String, Map<String, String>> translations_travel = {
         "এই ঋতু দেখার জন্য সেরা সময় ---। (Ē'i marasumē dēkhāra sērā samaẏa ---.)",
     "whats the best place to visit this summer":
         "এই গ্রীষ্মে দেখার জন্য সেরা জায়গা কি (Ē'i grīṣmē dēkhāra sērā jāẏagāṭi kī)",
-    "whats the best place to visit during vacation ":
+    "whats the best place to visit during vacation":
         "ছুটির সময় পরিদর্শন করার জন্য সেরা জায়গা কি (Chuṭira samaẏa dēkhāra jan'ya sērā jāẏagāṭi kī)",
     "where can i make a call?":
         "আমি কোথায় একটি কল করতে পারেন? (Āmi kōthāẏa kala karatē pāri?)",
@@ -294,7 +294,7 @@ const Map<String, Map<String, String>> translations_travel = {
         "या हंगामात भेट देण्यासाठी सर्वोत्तम वेळ आहे ---. (Yā haṅgāmāta bhēṭa dēṇyāsāṭhī sarvōttama vēḷa āhē ---.)",
     "whats the best place to visit this summer":
         "या उन्हाळ्यात भेट देण्यासाठी सर्वोत्तम स्थान कोणते आहे? (Yā unhāḷyāta bhēṭa dēṇyāsāṭhī sarvōttama sthāna kōṇatē āhē?)",
-    "whats the best place to visit during vacation ":
+    "whats the best place to visit during vacation":
         "सुट्टीच्या काळात भेट देण्यासाठी सर्वोत्तम स्थान कोणते आहे (Suṭṭīcyā kāḷāta bhēṭa dēṇyāsāṭhī sarvōttama sthāna kōṇatē āhē)",
     "where can i make a call?":
         "मी कुठे कॉल करू शकतो? (Mī kuṭhē kŏla karū śakatō?)",
@@ -316,4 +316,88 @@ const Map<String, Map<String, String>> translations_travel = {
         "हे ठिकाण कशासाठी ओळखले जाते? (Hē ṭhikāṇa kaśāsāṭhī ōḷakhalē jātē?)",
     "it is hot/cold here": "ते इथे गरम / थंड आहे (Tē ithē garama/ thaṇḍa āhē)",
   }
+};
+
+const Map<String, List<String>> suggestions_travel = {
+  'Can you show me the way to ---': [
+    'Where can i get the bus?',
+  ],
+  'Where can i get the bus?': [
+    'What is the next stop?',
+    'Is there a hotel nearby?',
+  ],
+  'What is the next stop?': [
+    'How long will it take to reach ----?',
+    'whats the best place to visit this summer',
+  ],
+  'How long will it take to reach---': [
+    'What is the next stop?',
+    'whats the best place to visit this summer',
+  ],
+  'Is there a hotel nearby?': [
+    'Where can I get the bus?',
+    'Can you show me the way to ---',
+  ],
+  'Is there a restaurant nearby?': [
+    'Where can I get the bus?',
+    'Can you show me the way to ---',
+  ],
+  'Where is the exit?': ['Where is the exit?'],
+  'Where is the bathroom?': [
+    'Where is the exit?',
+  ],
+  'Where are the stores?': [
+    'Where can I get the bus?',
+    'Can you show me the way to ---',
+  ],
+  'this season is the best time to visit ---.': [
+    'Where are you going?',
+    'What are you doing?',
+  ],
+  'whats the best place to visit this summer': [
+    'Can you show me the way to ---,',
+    'I am going to ----,would you like to come?',
+  ],
+  'whats the best place to visit during vacation': [
+    'Can you show me the way to ---,',
+    'I am going to ----,would you like to come?',
+  ],
+  'where can i make a call?': [
+    'Can you show me the way to ----,',
+    'Where is the exit?',
+  ],
+  'how often do u travel': [
+    'Do you know any places to visit in the city?',
+    'Nice to meet you.',
+  ],
+  'We had a great time, thank you.': [
+    'Thank you. Good bye.',
+  ],
+  'how long did you travel for': [
+    'how often do u travel',
+    'Do you know any places to visit in the city?',
+  ],
+  'do you know anyone who lives here?': [
+    'Do you know any places to visit in the city?',
+    'Nice to meet you.',
+  ],
+  'when will --- train arrive?': [
+    'how often do u travel',
+  ],
+  'Do you know any places to visit in the city?': [
+    'Can you show me the way to ---',
+    'Where can I get the bus?',
+  ],
+  'where is the nearest hotel': [
+    'Where can I get the bus?',
+    'Can you show me the way to ---',
+  ],
+  'what is this place know for?': [
+    'Can you show me the way to ---',
+    'Where can I get the bus?',
+  ],
+  'it is hot/cold here': [
+    'whats the best place to visit this summer',
+    'whats the best place to visit during vacation'
+  ],
 };
