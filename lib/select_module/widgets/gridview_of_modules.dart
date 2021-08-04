@@ -19,7 +19,7 @@ class GridViewOfModules extends StatelessWidget {
             right: SizeConfig.getScreenSize(context).width * 0.1,
             left: SizeConfig.getScreenSize(context).width * 0.1),
         child: GridView.builder(
-            shrinkWrap: true,
+            shrinkWrap: false,
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                 maxCrossAxisExtent: 200,
                 childAspectRatio: 3 / 2,

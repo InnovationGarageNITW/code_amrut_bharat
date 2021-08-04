@@ -319,7 +319,7 @@ const Map<String, List<String>> suggestions_intro = {
   'My name is ----': [
     "What is your name?",
     "What do you do?",
-    "'How are you doing?'"
+    "How are you doing?"
   ],
   "Could you please speak slowly?": ["Can you repeat what you just said?"],
   'Where do you live?': ["I live at ------", "What do you do?"],

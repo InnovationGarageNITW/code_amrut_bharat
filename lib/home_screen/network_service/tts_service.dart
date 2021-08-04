@@ -7,7 +7,7 @@ import 'package:amrut_bharat/home_screen/data/voice.dart';
 class TTService {
   static final TTService _singleton = TTService._internal();
   final _httpClient = HttpClient();
-  static const _apiKey = "";
+  static const _apiKey = "AIzaSyDLDM1eulNqjziVdGrQbnJq8kzxoMyj9Xs";
   static const _apiURL = "texttospeech.googleapis.com";
 
   factory TTService() {

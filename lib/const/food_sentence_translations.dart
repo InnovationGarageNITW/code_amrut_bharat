@@ -274,7 +274,7 @@ const Map<String, Map<String, String>> translations_food = {
 };
 
 const Map<String, List<String>> suggestions_food = {
-  'How long will my food take': ['Thank you', 'Can I get some water'],
+  'How long will my food take': ['Can I get some water'],
   'Can you pack my food as take-away': [
     'Whats the price of ---',
     'Is it spicy?',
@@ -294,8 +294,8 @@ const Map<String, List<String>> suggestions_food = {
     'Are there any specials on the menu?',
     'Whats the price of ---'
   ],
-  'Can i get extra ---(ketchup)?': ['Thank you.'],
-  'The food is great here': ['Thank you.'],
+  'Can i get extra ---(ketchup)?': [],
+  'The food is great here': [],
   'Did you like the food here': [
     'Thank you for having us. We loved the dinner.',
   ],
@@ -304,23 +304,21 @@ const Map<String, List<String>> suggestions_food = {
     'Can I get the menu'
   ],
   'Is this healthy?': ['Is it spicy?', 'Can you retake my order'],
-  'Can I get some water': [
-    'Thank you.',
-    'Can I get the menu',
-    'I want to order my food now'
-  ],
+  'Can I get some water': ['Can I get the menu', 'I want to order my food now'],
   'I want to order my food now': [
     'Are there any specials on the menu?',
     'Whats the price of ---'
   ],
-  'Is it spicy?': ['Is it healthy?', 'Can you retake my order'],
+  'Is it spicy?': ['Is this healthy?', 'Can you retake my order'],
   'Whats the price of ---': [
     'Is it spicy?',
-    'Is this vegetarian?',
+    'Is this vegetarian ?',
     'Can you retake my order?'
   ],
-  'I suggest you eat -- here.': ['Can you retake my order', 'Thank you.'],
-  'Can I get the menu': ['Thank you.', 'I want to order my food now'],
+  'I suggest you eat -- here.': [
+    'Can you retake my order',
+  ],
+  'Can I get the menu': ['I want to order my food now'],
   'Thank you for having us. We loved the dinner.': [
     'Nice to meet you.',
     'Goodbye.'
